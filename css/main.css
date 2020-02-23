@@ -1,12 +1,14 @@
 body {
     margin: 60px auto;
     width: 70%;
+    backgorund-color: #333333
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
+    color: #999
 }
 nav ul li, footer ul li {
     display: inline;
@@ -26,7 +28,7 @@ h1 {
 p {
     font-size: 1.5em;
     line-height: 1.4em;
-    color: #333;
+    color: #999999;
 }
 footer {
     border-top: 1px solid #d5d5d5;
