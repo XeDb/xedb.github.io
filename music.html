@@ -9,6 +9,20 @@ title: XeDb
         <audio controls>
             <source src="Songs/TestSong.wav" type="audio/wav">
           Your browser does not support the audio element.
+            <input id="webInput">
+            <source src="Songs/TestSong.wav" type="audio/wav" id="webSong">
+
           </audio>
     </div>
 </div><!-- /.blurb -->
+
+<script>
+    var input = document.getElementById("webInput");
+    input.addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+            event.preventDefault();
+            document.getElementById("myBtn").click();
+            document.getElementById("webSong").src = document.getElementById("webInput").value;
+        }
+    });
+</script>
